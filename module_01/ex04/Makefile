@@ -9,5 +9,6 @@ all :
 
 clean :
 	@rm -rf $(NAME)
+	@rm -rf *.replace
 
 .PHONY : all clean

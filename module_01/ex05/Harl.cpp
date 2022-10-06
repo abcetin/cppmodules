@@ -21,10 +21,6 @@ void Harl::error(void)
 
 Harl::Harl()
 {
-	action[0] = &Harl::debug;
-	action[1] = &Harl::info;
-	action[2] = &Harl::warning;
-	action[3] = &Harl::error;
 }
 
 void Harl::complain(std::string level)
@@ -32,7 +28,7 @@ void Harl::complain(std::string level)
 	std::string func[4] = {"debug", "info", "warning", "error"};
 	for (size_t i = 0; i < 4; i++)
 	{
-		if (!strcmp(func[i].c_str(), level.c_str()))
+		if (func[i] == level)
 			(this->*action[i])();
 	}
 }

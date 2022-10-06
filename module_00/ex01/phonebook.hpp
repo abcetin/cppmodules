@@ -9,7 +9,7 @@ class PhoneBook
 	Contact book[8];
 
 public:
-	void add(Contact person);
+	void add();
 	void search();
 };
 

@@ -1,4 +1,4 @@
-NAME	= DiamondTrap
+NAME	= Bureaucrat
 CC		= g++
 CFLAGS	=  -Wall -Werror -Wextra -std=c++98
 

@@ -1,24 +1,24 @@
-#include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main(void)
 {
-	FragTrap frag("Abdullah");
+	DiamondTrap die("FURKAN");
 
-	frag.attack("Mete");
-	frag.takeDamage(10);
-	frag.takeDamage(10);
-	frag.attack("Mete");
-	frag.attack("Mete");
-	frag.attack("Mete");
-	frag.attack("Mete");
-	frag.attack("Mete");
-	frag.takeDamage(10);
-	frag.takeDamage(10);
-	frag.takeDamage(10);
-	frag.attack("Mete");
-	frag.attack("Mete");
-	frag.attack("Mete");
-	frag.highFivesGuys();
-	frag.takeDamage(50);
-	frag.highFivesGuys();
+	die.attack("Mete");
+	die.takeDamage(10);
+	die.takeDamage(10);
+	die.attack("Mete");
+	die.attack("Mete");
+	die.attack("Mete");
+	die.attack("Mete");
+	die.attack("Mete");
+	die.takeDamage(10);
+	die.takeDamage(10);
+	die.takeDamage(10);
+	die.attack("Mete");
+	die.attack("Mete");
+	die.attack("Mete");
+	die.highFivesGuys();
+	die.takeDamage(50);
+	die.highFivesGuys();
 }

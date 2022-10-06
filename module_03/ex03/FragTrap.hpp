@@ -3,7 +3,7 @@
 
 #include "ClapTrap.hpp"
 
-class FragTrap : public virtual ClapTrap
+class FragTrap : virtual public ClapTrap
 {
 public:
 	FragTrap();
@@ -11,8 +11,8 @@ public:
 	FragTrap(const FragTrap &cpy);
 	FragTrap  &operator=(const FragTrap &cpy);
 
-	void highFivesGuys(void);
-	void attack(const std::string& target);
+	virtual void highFivesGuys(void);
+	virtual void attack(const std::string& target);
 	virtual ~FragTrap();
 };
 

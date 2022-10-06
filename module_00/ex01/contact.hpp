@@ -15,15 +15,15 @@ class Contact
 public:
 	void set_id(int id);
 	int get_id();
-	void set_name(std::string name);
+	void set_name();
 	std::string get_name();
-	void set_surname(std::string surname);
+	void set_surname();
 	std::string get_surname();
-	void set_nickname(std::string nickname);
+	void set_nickname();
 	std::string get_nickname();
-	void set_number(std::string number);
+	void set_number();
 	std::string get_number();
-	void set_dark_secret(std::string dark_secret);
+	void set_dark_secret();
 	std::string get_dark_secret();
 };
 
