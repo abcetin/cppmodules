@@ -4,13 +4,16 @@ bool bsp(Point const a, Point const b, Point const c, Point const point);
 
 int main(void)
 {
-	Point const a(Fixed(1), Fixed(1));
-	Point const b(Fixed(2), Fixed(5));
-	Point const c(Fixed(5), Fixed(4));
-	Point const point(Fixed(2), Fixed(3));
-	Point point1(10, 30);
-	std::cout <<"BSP : ";
-	std::cout << bsp(a, b, c, point) << std::endl;
-	std::cout <<"BSP : ";
-	std::cout << bsp(a, b, c, point1) << std::endl;
+	Point const a(1, 1);
+	Point const b(2, 5);
+	Point const c(5, 4);
+	Point const point(1.7997254901961, 4.800068627451);
+	Point const point1(2, 3);
+
+
+	bsp(a,b,c,point1);
+	//std::cout <<"BSP : ";
+	//std::cout << bsp(a, b, c, point1) << std::endl;
+	// std::cout <<"BSP : ";
+	// std::cout << bsp(a, b, c, point1) << std::endl;
 }

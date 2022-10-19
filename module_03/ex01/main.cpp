@@ -6,8 +6,8 @@ int main(void)
 
 	serena.attack("Mete");
 	serena.guardGate();
-	serena.takeDamage(10);
-	serena.takeDamage(10);
+	serena.takeDamage(100);
+	serena.takeDamage(101);
 	serena.attack("Mete");
 	serena.attack("Mete");
 	serena.attack("Mete");

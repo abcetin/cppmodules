@@ -15,14 +15,14 @@ DiamondTrap::DiamondTrap(const DiamondTrap &cpy)
 	std::cout << "DiamondTrap cpy constructor" << std::endl;
 }
 
-DiamondTrap::DiamondTrap(const std::string &name)
+DiamondTrap::DiamondTrap(const std::string &name) 
 {
+	ClapTrap::name = name + "_clap_name";
 	this->name = name;
-	this->ClapTrap::name = name + "_clap_name";
 	this->hitPoints = FragTrap::hitPoints;
 	this->energyPoint = ScavTrap::energyPoint;
 	this->attackDamage = FragTrap::attackDamage;
-	std::cout << "DiamondTrap constructor" << std::endl;
+	std::cout << "Name constructor for DiamondTrap called" << std::endl;
 }
 
 DiamondTrap &DiamondTrap::operator=(const DiamondTrap &cpy)
@@ -37,7 +37,8 @@ DiamondTrap &DiamondTrap::operator=(const DiamondTrap &cpy)
 
 void DiamondTrap::whoAmI(void)
 {
-	std::cout << "Who Am I : " << this->name;
+	std::cout << "Who Am I : " << this->name << std::endl;
+	std::cout << "Who Am I : " << this->ClapTrap::name;
 }
 
 void DiamondTrap::attack(const std::string& target)

@@ -31,7 +31,7 @@ public:
 	~Form();
 };
 
-std::ostream &operator<<(std::ostream &out, Form &form);
+std::ostream &operator<<(std::ostream &out, const Form &form);
 
 class Form::GradeTooHighException : public MyException{
 	public:

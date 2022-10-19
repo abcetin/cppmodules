@@ -12,7 +12,7 @@ int main(void)
 	std::cout << b << std::endl;
 	std::cout << Fixed::max(a, b) << std::endl;
 
-	std::cout << "-------------\n";
+	std::cout << "---------------------------\n";
 	std::cout << (a == b) << std::endl;
 	std::cout << (a != b) << std::endl;
 	std::cout << (a < b) << std::endl;
@@ -20,6 +20,7 @@ int main(void)
 	std::cout << (a >= b) << std::endl;
 	std::cout << (a <= b) << std::endl;
 	
+	std::cout << "---------------------------\n";
 	std::cout  << "*"<< (a * b) << std::endl;
 	std::cout  << "/"<< (a / b) << std::endl;
 	std::cout  << "-"<< (a - b) << std::endl;

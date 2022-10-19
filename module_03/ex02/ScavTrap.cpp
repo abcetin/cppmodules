@@ -49,8 +49,13 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::guardGate()
 {
-	this->guardMode = 1;
-	std::cout << "Guard Mode Active"<< std::endl;
+	if (this->energyPoint)
+	{
+		this->guardMode = 1;
+		std::cout << "Guard Mode Active"<< std::endl;
+	}
+	else
+		std::cout << "Low energy level " << this->energyPoint << " can not attack " << std::endl;
 }
 
 void ScavTrap::attack(const std::string& target)

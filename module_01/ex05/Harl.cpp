@@ -21,6 +21,13 @@ void Harl::error(void)
 
 Harl::Harl()
 {
+	action[0] = &Harl::debug;
+	action[1] = &Harl::info;
+	action[2] = &Harl::warning;
+	action[3] = &Harl::error;
+}
+Harl::~Harl()
+{
 }
 
 void Harl::complain(std::string level)

@@ -16,8 +16,4 @@ public:
 	Harl();
 };
 
-enum Value {
-	
-};
-
 #endif

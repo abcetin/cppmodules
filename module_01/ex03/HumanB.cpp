@@ -14,12 +14,7 @@ void HumanB::setWeapon(Weapon &weapon)
 	this->wType = &weapon;
 }
 
-Weapon *HumanB::getWeapon()
-{
-	return(this->wType);
-}
-
 void	HumanB::attack()
 {
-	std::cout << this->name << " attacks with their " << this->getWeapon()->getType() << std::endl;
+	std::cout << this->name << " attacks with their " << this->wType->getType() << std::endl;
 }

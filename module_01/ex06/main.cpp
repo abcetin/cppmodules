@@ -16,20 +16,21 @@ int main(int ac, char **av)
 	Harl harl;
 
 	if (ac == 1)
-		return (0);
+	{	
+		std::cout << "[ Not Enough Argument ]" << std::endl;
+		return 0;
+	}
 	switch (ret(av[1]))
 	{
 	case 0:
-		harl.complain(av[1]);
-		break ;
+		harl.complain("debug");
 	case 1:
-		harl.complain(av[1]);
-		break ;
+		harl.complain("info");
 	case 2:
-		harl.complain(av[1]);
-		break ;
+		harl.complain("warning");
 	case 3:
-		harl.complain(av[1]);
+		harl.complain("error");
+		break;
 	default:
 		std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 	}

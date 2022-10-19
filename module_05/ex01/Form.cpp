@@ -59,7 +59,7 @@ bool Form::beSigned(Bureaucrat &bureaucrat)
 	}
 }
 
-std::ostream &operator<<(std::ostream &out, Form &form)
+std::ostream &operator<<(std::ostream &out, const Form &form)
 {
 	return out << form.getName() << " " << form.getSign() << " "
 			   << form.getGradeRequiredToSign() << " " << form.getGradeRequiredToExecute();

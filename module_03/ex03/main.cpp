@@ -2,8 +2,12 @@
 
 int main(void)
 {
-	DiamondTrap die("FURKAN");
+	DiamondTrap die("furkan");
 
+	die.whoAmI();
+	
+	std::cout <<"\n-------------------------\n";
+	
 	die.attack("Mete");
 	die.takeDamage(10);
 	die.takeDamage(10);
@@ -12,6 +16,8 @@ int main(void)
 	die.attack("Mete");
 	die.attack("Mete");
 	die.attack("Mete");
+	die.takeDamage(10);
+	die.guardGate();
 	die.takeDamage(10);
 	die.takeDamage(10);
 	die.takeDamage(10);

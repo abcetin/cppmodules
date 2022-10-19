@@ -38,6 +38,6 @@ class Bureaucrat::GradeTooLowException : public MyException{
 	public:
 		GradeTooLowException(const char *msg) : MyException(msg){}
 };
-std::ostream &operator<<(std::ostream &out, Bureaucrat &bure);
+std::ostream &operator<<(std::ostream &out, const Bureaucrat &bure);
 
 #endif

@@ -6,6 +6,7 @@
 class Brain
 {
 public:
+
 	Brain();
 	Brain(const Brain &cpy);
 	Brain &operator=(const Brain &cpy);

@@ -16,6 +16,5 @@ bool bsp(Point const a, Point const b, Point const c, Point const point)
 	wa = ((x * (by - cy)) + (y * (cx - bx)) + (bx * cy) - (cx * by)) / d;
 	wb = ((x * cy) - (y * cx)) / d;
 	wc = ((y * bx) - (x * by)) / d;
-
 	return ((wa > 0 && wa < 1) && (wb > 0 && wb < 1) && (wc > 0 && wc < 1));
 }

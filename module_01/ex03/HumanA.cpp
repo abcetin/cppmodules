@@ -12,5 +12,6 @@ HumanA::~HumanA()
 
 void HumanA::attack()
 {
-	std::cout << this->name << " attacks with their " << this->wType->getType() << std::endl;
+	if (this->wType)
+		std::cout << this->name << " attacks with their " << this->wType->getType() << std::endl;
 }
