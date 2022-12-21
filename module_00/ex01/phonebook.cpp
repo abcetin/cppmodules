@@ -21,7 +21,6 @@ void PhoneBook::add()
 	book[i].set_dark_secret();
 	book[i].set_number();
 	std::cout << "Added" << std::endl;
-	printf("%d\n", i);
 	i++;
 }
 void PhoneBook::search()

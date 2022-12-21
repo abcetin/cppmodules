@@ -7,13 +7,13 @@ int main(void)
 	Point const a(1, 1);
 	Point const b(2, 5);
 	Point const c(5, 4);
-	Point const point(1.7997254901961, 4.800068627451);
+	Point const point(1, 1);
 	Point const point1(2, 3);
 
 
 	bsp(a,b,c,point1);
-	//std::cout <<"BSP : ";
-	//std::cout << bsp(a, b, c, point1) << std::endl;
-	// std::cout <<"BSP : ";
-	// std::cout << bsp(a, b, c, point1) << std::endl;
+	std::cout <<"BSP : ";
+	std::cout << bsp(a, b, c, point) << std::endl;
+	std::cout <<"BSP : ";
+	std::cout << bsp(a, b, c, point1) << std::endl;
 }

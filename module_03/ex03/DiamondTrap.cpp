@@ -22,6 +22,7 @@ DiamondTrap::DiamondTrap(const std::string &name)
 	this->hitPoints = FragTrap::hitPoints;
 	this->energyPoint = ScavTrap::energyPoint;
 	this->attackDamage = FragTrap::attackDamage;
+    printf("%d %d %d\n",hitPoints, energyPoint, attackDamage);
 	std::cout << "Name constructor for DiamondTrap called" << std::endl;
 }
 

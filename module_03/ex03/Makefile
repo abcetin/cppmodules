@@ -1,6 +1,6 @@
 NAME	= DiamondTrap
 CC		= g++
-CFLAGS	=  -Wall -Werror -Wextra -std=c++98
+CFLAGS	=  -Wall -Werror -Wextra -std=c++98 -Wshadow
 
 SRC = $(wildcard *.cpp)
 
